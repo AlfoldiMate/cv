@@ -1,5 +1,24 @@
 
-#import "components.typ": when_lang, chips
+#import "components.typ": when_lang, chips, begin
+
+#let beggining = [
+  #begin(
+
+    text[
+      #when_lang(lang: "hu")[Alföldi Máté]
+      #when_lang(lang: "en")[Máté Alföldi]
+    ],
+
+    text[mate.alfoldi\@outlook.com],
+
+    text[06 30 711 2813],
+
+    text[Budapest, VII.],
+
+    text[INTP],
+
+  )
+]
 
 // --------------- HEADINGS ---------------
 

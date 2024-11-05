@@ -2,6 +2,6 @@
 
 #show: default
 
-#set text(lang: "hu")
+#set text(lang: "en")
 
 #include "base\prog.typ"
