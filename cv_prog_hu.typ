@@ -32,13 +32,17 @@
 
 )
 
-#section(title: "Rólam")[
+// ABOUT
+
+#section(title: content.head.about)[
 
   #content.about.prog
 
 ]
 
-#section(title: "Releváns Szakmai Tevékenységek")[
+// PROJECTS
+
+#section(title: content.head.relevant_projects)[
 
   #content.projects.helios
 
@@ -56,7 +60,9 @@
 
 #pagebreak()
 
-#section(title: "Képességek")[
+// SKILLS
+
+#section(title: content.head.skills)[
 
   // Required for the chip component to work properly
   #set par(justify: false)
@@ -102,7 +108,9 @@
 
 ]
 
-#section(title: "Tapasztalat")[
+// EXPERIENCE
+
+#section(title: content.head.experience)[
   
   #content.experience.bosch_ps
 
@@ -112,7 +120,9 @@
 
 ]
 
-#section(title: "Oktatás")[
+// EDUCATION
+
+#section(title: content.head.education)[
 
   //#content.school.bme
 
@@ -122,13 +132,17 @@
 
 #pagebreak()
 
-#section(title: "Szabadalmak")[
+// PATENTS
+
+#section(title: content.head.patents)[
 
   #content.patent.battery
 
 ]
 
-#section(title: "Egyéb szakmai tevékenységek")[
+// OTHER PROJECTS
+
+#section(title: content.head.other_projects)[
 
   #content.projects.feed_forward_ident
 

@@ -1,6 +1,41 @@
 
 #import "components.typ": when_lang
 
+// --------------- HEADINGS ---------------
+
+#let head = (
+
+  about: [
+    #when_lang(lang: "hu")[Rólam]
+    #when_lang(lang: "en")[Introduction]
+  ],
+  relevant_projects: [
+    #when_lang(lang: "hu")[Releváns szakmai tevékenységek]
+    #when_lang(lang: "en")[Projects]
+  ],
+  skills: [
+    #when_lang(lang: "hu")[Képességek]
+    #when_lang(lang: "en")[Skills]
+  ],
+  experience: [
+    #when_lang(lang: "hu")[Tapasztalat]
+    #when_lang(lang: "en")[Experience]
+  ],
+  education: [
+    #when_lang(lang: "hu")[Oktatás]
+    #when_lang(lang: "en")[Education]
+  ],
+  patents: [
+    #when_lang(lang: "hu")[Szabadalmak]
+    #when_lang(lang: "en")[Patents]
+  ],
+  other_projects: [
+    #when_lang(lang: "hu")[Egyéb szakmai tevékenységek]
+    #when_lang(lang: "en")[Other projects]
+  ],
+  
+)
+
 // ---------------- ABOUT -----------------
 
 #let about = (
