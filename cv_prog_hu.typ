@@ -1,4 +1,4 @@
-#import "lib\components.typ" : section, begin, chips
+#import "lib\components.typ" : section, begin, chips, when_lang
 #import "lib\content.typ"
 
 #set page(
@@ -20,7 +20,10 @@
 
 #begin(
 
-  text[Alföldi Máté],
+  text[
+    #when_lang(lang: "hu")[Alföldi Máté]
+    #when_lang(lang: "en")[Máté Alföldi]
+  ],
 
   text[mate.alfoldi\@outlook.com],
 
@@ -67,44 +70,17 @@
   // Required for the chip component to work properly
   #set par(justify: false)
 
-  == PROGRAMOZÁS 
-  #chips(level: 1)[C\#] 
-  #chips(level: 2)[C] 
-  #chips(level: 2)[MATLAB]
-  #chips(level: 2)[JavaScript] 
-  #chips(level: 3)[Rust]
-  #chips(level: 3)[C++]
-  #chips(level: 3)[Python]
+  #content.skills.programming
 
-  == ESZKÖZÖK
-  #chips(level: 1)[GitHub Projects]
-  #chips(level: 2)[Git]
-  #chips(level: 2)[Tailwind CSS]
-  #chips(level: 3)[GitHub Actions]
-  #chips(level: 3)[SQL]
-  #chips(level: 3)[Typst]
-  #chips(level: 3)[CSS]
+  #content.skills.tools
 
-  == MECHATRONIKA
-  #chips(level: 1)[Villamos hajtásrendszerek]
-  #chips(level: 2)[Belsőégésű motorok]
-  #chips(level: 3)[Irányítástechnika]
-  #chips(level: 3)[Rendszerelmélet és modellezés]
+  #content.skills.mechatronics
 
-  == SZIMULÁCIÓ
-  #chips(level: 2)[Simulink]
-  #chips(level: 2)[Amesim]
-  #chips(level: 3)[FMI]
- 
-  == MÉRÉSTECHNIKA
-  #chips(level: 2)[imc Studio]
-  #chips(level: 2)[HBM catman]
-  #chips(level: 2)[imc FAMOS]
-  #chips(level: 3)[Vector CANape]
+  #content.skills.simulation
 
-  == NYELVTUDÁS
-  #chips(level: 1)[Magyar]
-  #chips(level: 2)[Angol]
+  #content.skills.measurement
+
+  #content.skills.languages
 
 ]
 

@@ -1,5 +1,5 @@
 
-#import "components.typ": when_lang
+#import "components.typ": when_lang, chips
 
 // --------------- HEADINGS ---------------
 
@@ -364,5 +364,94 @@
 
       I was requested to develop control and measurement tooling for an already existing machine in LabView what I successfully completed.
     ]
+  ]
+)
+
+// ----------------- SKILLS -----------------
+
+#let skills = (
+
+  programming: [
+    
+    #when_lang(lang: "hu")[== PROGRAMOZÁS]
+    #when_lang(lang: "en")[== PROGRAMMING]
+    
+    #chips(level: 1)[C\#] 
+    #chips(level: 2)[C] 
+    #chips(level: 2)[MATLAB]
+    #chips(level: 2)[JavaScript] 
+    #chips(level: 3)[Rust]
+    #chips(level: 3)[C++]
+    #chips(level: 3)[Python]
+  ],
+  tools: [
+
+    #when_lang(lang: "hu")[== ESZKÖZÖK]
+    #when_lang(lang: "en")[== TOOLS]
+    
+    #chips(level: 1)[GitHub Projects]
+    #chips(level: 2)[Git]
+    #chips(level: 2)[Tailwind CSS]
+    #chips(level: 3)[GitHub Actions]
+    #chips(level: 3)[SQL]
+    #chips(level: 3)[Typst]
+    #chips(level: 3)[CSS]
+  ],
+  mechatronics: [
+
+    #when_lang(lang: "hu")[
+
+      == MECHATRONIKA
+
+      #chips(level: 1)[Villamos hajtásrendszerek]
+      #chips(level: 2)[Belsőégésű motorok]
+      #chips(level: 3)[Irányítástechnika]
+      #chips(level: 3)[Rendszerelmélet és modellezés]
+    ]
+    #when_lang(lang: "en")[
+
+      == MECHATRONICS
+      
+      #chips(level: 1)[Electric drivetrains]
+      #chips(level: 2)[Internal combustion engines]
+      #chips(level: 3)[Control theory]
+      #chips(level: 3)[System theory and modelling]
+    ]
+
+  ],
+  simulation: [
+
+    #when_lang(lang: "hu")[== SZIMULÁCIÓ]
+    #when_lang(lang: "en")[== SIMULATION]
+
+    #chips(level: 2)[Simulink]
+    #chips(level: 2)[Amesim]
+    #chips(level: 3)[FMI]
+  ],
+  measurement: [
+
+    #when_lang(lang: "hu")[== MÉRÉSTECHNIKA]
+    #when_lang(lang: "en")[== MEASUREMENT]
+
+    #chips(level: 2)[imc Studio]
+    #chips(level: 2)[HBM catman]
+    #chips(level: 2)[imc FAMOS]
+    #chips(level: 3)[Vector CANape]
+  ],
+  languages: [
+
+    #when_lang(lang: "hu")[
+
+      == NYELVTUDÁS
+      #chips(level: 1)[Magyar]
+      #chips(level: 2)[Angol]
+    ]
+    #when_lang(lang: "en")[
+
+      == LANGUAGE
+      #chips(level: 1)[Hungarian]
+      #chips(level: 2)[English]
+    ]
+
   ]
 )
