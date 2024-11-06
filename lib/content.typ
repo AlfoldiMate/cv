@@ -70,6 +70,17 @@
 
       I started dealing with software development in the lower grades of elementary school in a self-taught manner, initially in a Delphi environment. Later, at the beginning of high school, my interest shifted towards embedded C and C\#. During this time, I decided to become a mechatronics engineer, as I always had a broad range of interests and thought that this way I could acquire knowledge to solve a wide spectrum of problems. I consider programming one of the most important stuff in my toolkit, so I continuously expand my knowledge by learning new languages and technologies. Some of my hobbies are also related to the previously mentioned fields, beyond which sports and a healthy lifestyle play an important role in my life as well. Additionally, I reserve time to good TV series and more interesting games on Xbox, but classic card and board games are also part of my active relaxation.
     ]
+  ],
+  vehicles: [
+
+    #when_lang(lang: "hu")[
+
+      Már a gimnáziumi éveim elején megfogalmazódott bennem, hogy mechatronikai mérnök leszek, mivel mindig is széles érdeklődési körrel rendelkeztem és úgy gondoltam így szerezhetek olyan tudást, amivel problémák széles spektrumát lehet megoldani. A programozást az egyik legfontosabb eszköztáramnak tekintem, ezért a tudásomat folyamatosan, újabb nyelvek és technológiák irányába bővítem. Jármű hajtás rendszerekkel nem csak a mindennapi munkám során foglalkozom, hanem szabadidőmben belsőégésű motorok teljesítmény növelésével is. Fontos szerepet játszik az életemben a sport és az egészséges életmód is. Ezen felül néha szentelek időt jobb sorozatoknak, érdekesebb játékoknak Xboxon, de a klasszikus kártya és társasjátékok is az aktív kikapcsolódásom részét képzik.
+    ]
+    #when_lang(lang: "en")[
+
+      At the beginning of high school, I decided to become a mechatronics engineer because I've always had a broad range of interests and believed this path would provide the knowledge to solve a wide variety of problems. I consider programming to be one of my most essential tools, so I continuously expand my skills by learning new languages and technologies. I work with vehicle drive systems not only in my daily job but also in my free time, enhancing the performance of internal combustion engines. Sports and a healthy lifestyle also play an important role in my life. Additionally, I occasionally dedicate time to watching good series, playing interesting games on Xbox, and enjoy classic card and board games as part of my active relaxation.
+    ]
   ]
 )
 
@@ -184,8 +195,9 @@
 
   battery: [
 
-    == #when_lang(lang: "en")[ #upper[Method for operating a redox flow battery cell]]
-    == #when_lang(lang: "hu")[ #upper[Eljárás redox flow típusú akkumulátor cellák üzemeltetésére]]
+    #when_lang(lang: "en")[ #upper[== Method for operating a redox flow battery cell]]
+    #when_lang(lang: "hu")[ #upper[== Eljárás redox flow típusú akkumulátor cellák üzemeltetésére]]
+
     - WO2023099380A3 | 2022.11.28
   ]
 )
@@ -195,6 +207,35 @@
 #let projects = (
 
   pear: [
+
+    #when_lang(lang: "hu")[
+
+      == ELEKTROMÁGNESES VÉGESELEM SZIMULÁCIÓ KIÉRTÉKELŐ ESZKÖZ FEJLESZTÉSE
+
+      Elektromos hajtás területen -- rendszerteljesítmény mérnökként -- végzett tevékenységem nyomán sikerült egy innovációs projekt keretében oda eljutni, hogy MATLAB-ban az én vezetésemmel készítsünk el egy olyan eszközt, ami a nyers végeselem megoldó szoftver eredményeket rendszer szinten használható jellegmezőkké dolgoz fel.
+
+    ]
+    #when_lang(lang: "en")[
+
+      == DEVELOPMENT OF AN ELECTROMAGNETIC FEA SIMULATION EVALUATION TOOL
+
+      Through my work in the field of electric drives, as a system performance engineer, I was able to create a solution in MATLAB for an innovation project. Under my direction, we created a tool that processes raw finite element solver software results into system-level usable lookup table data.
+    ]
+  ],
+  ares_meas: [
+
+    #when_lang(lang: "hu")[
+      
+      == PROTOTÍPUS VILLANYMOTOR MÉRÉS ÉS KIÉRTÉKELÉS
+
+      Egy projekt keretében többször végeztem féktermi méréseket prototípus villanymotorokon. A felkészülés egy részében is szerepem volt, mivel a külső helyszínen a méréstechnikát, és a fékteremmel eszközeivel történő kommunikációt is nekünk kellett megoldani. Saját CAN kábelemmel ad hoc megoldottam -- a lehetőségekhez mérten -- hogy ne csak mérni tudjunk, hanem fékgépet is vezérelni.
+    ]
+    #when_lang(lang: "en")[
+
+      == PROTOTYPE ELECTRIC MOTOR MEASUREMENT AND EVALUATION
+
+      As part of a project, I conducted several test bench measurements on prototype electric motors. I was also involved in the preparation phase, as we were responsible for setting up the measurement system and establishing communication with the test bench equipment because we were measuring on an external site. Using my own CAN cable, I implemented an ad hoc solution, within the available conditions, to be able not only measure but also controlling the test bench.
+    ]
 
   ],
   helios: [
